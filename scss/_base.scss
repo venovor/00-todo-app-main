@@ -6,7 +6,8 @@ html {
 }
 
 body {
-    background-color: $background-color;
+    /*background-color: $background-color;*/
+    background-color: cadetblue;
     font-size: $font-main;
     font-family: $font-family;
     margin: 0;
@@ -16,13 +17,29 @@ body {
     align-items: center;
 }
 
+.header-image {
+    background-image: $bg-mobile-dark;
+    height: 25vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 main {
     width: 90vw;
     border: solid black; /*to be removed*/
+    position: absolute;
+    margin-top: 3rem;
 }
 
 h1 {
     text-transform: uppercase;
+    border: solid yellow; /*to be removed*/
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .todo-overview-list {
