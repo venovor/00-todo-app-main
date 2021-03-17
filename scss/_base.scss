@@ -30,21 +30,53 @@ main {
     border: solid black; /*to be removed*/
     position: absolute;
     margin-top: 3rem;
+    font-family: $font-family;
 }
 
 h1 {
     text-transform: uppercase;
-    border: solid yellow; /*to be removed*/
     margin: 0;
+    margin-bottom: 2rem;
+    letter-spacing: 6px;
+    color: white;
+    font-weight: $font-weight-regular;
 }
 
 p {
     margin: 0;
 }
 
-.todo-overview-list {
-    list-style: none;
-    padding-left: 0em;
+.todo {
+    &__insert {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        width: 100%;
+        padding: 0.5em 0;
+        background-color: $clr-blue-desaturated;
+        border-radius: 3px;
+    }
+
+    &__list {
+        
+    }
+
+    &__clear {
+        
+    }
+
+    &__overview {
+    
+        &--list {
+            list-style: none;
+            padding-left: 0em;
+        }
+    }
+
+    &__dragdrop {
+        
+    }
 }
 
 ul li {
