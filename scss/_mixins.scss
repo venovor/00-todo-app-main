@@ -1,0 +1,17 @@
+/*to be deleted
+body {
+    font-weight: 100;
+}
+*/
+
+@mixin list-element() {
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-content: flex-start;*/
+    width: 100%;
+    padding: 0.8em 0;
+    background-color: $clr-blue-desaturated;
+    border-radius: 3px;
+    @content;
+}
