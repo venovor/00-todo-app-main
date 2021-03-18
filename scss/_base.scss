@@ -48,14 +48,9 @@ p {
 
 .todo {
     &__insert {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: flex-start;
-        width: 100%;
-        padding: 0.5em 0;
-        background-color: $clr-blue-desaturated;
-        border-radius: 3px;
+        @include list-element {
+            color: $clr-gray-blue-verydark-darktheme-1;
+        }
     }
 
     &__list {
@@ -78,6 +73,24 @@ p {
         
     }
 }
+
+.cyrcle {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 1px solid grey; /* change to specified color */
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: grey; /* change to specified color */
+    font-family: inherit;
+ }
 
 ul li {
     display: inline;
