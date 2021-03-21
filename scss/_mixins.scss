@@ -4,7 +4,7 @@ body {
 }
 */
 
-@mixin list-element() {
+@mixin list-element-style() {
     display: flex;
     /*flex-direction: column;*/
     /*justify-content: center;*/
@@ -13,5 +13,11 @@ body {
     padding: 0.8em 0;
     background-color: $clr-blue-desaturated;
     border-radius: 3px;
+    @content;
+}
+
+@mixin list-element-bullet() {
+    list-style: none;
+    padding-left: 0em;
     @content;
 }

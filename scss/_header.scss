@@ -6,3 +6,11 @@ body {
 */
 
 $bg-mobile-dark: url('images/bg-mobile-dark.jpg');
+
+.header-image {
+    background-image: $bg-mobile-dark;
+    height: 25vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+}

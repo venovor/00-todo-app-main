@@ -5,9 +5,8 @@ body {
 */
 
 /*Primary*/
-$background-color: lightyellow; /* to be removed */
 $clr-primary: hsl(220, 98%, 61%);
-$bg-clr-linear-gradient: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+$clr-gradient: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 
 /*Light Theme*/
 $clr-gray-light: hsl(0, 0%, 98%);

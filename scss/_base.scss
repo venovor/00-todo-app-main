@@ -7,7 +7,7 @@ html {
 
 body {
     /*background-color: $background-color;*/
-    background-color: cadetblue;
+    background-color: cadetblue; /* to be removed, use for test only */
     font-size: $font-main;
     font-family: $font-family;
     margin: 0;
@@ -17,23 +17,15 @@ body {
     align-items: center;
 }
 
-.header-image {
-    background-image: $bg-mobile-dark;
-    height: 25vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 main {
     width: 90vw;
-    border: solid black; /*to be removed*/
+    border: solid black; /* to be removed */
     position: absolute;
     margin-top: 3rem;
     font-family: $font-family;
 }
 
-h1 {
+.title {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 2rem;
@@ -41,61 +33,6 @@ h1 {
     color: white;
     font-weight: $font-weight-regular;
 }
-
-p {
-    margin: 0;
-}
-
-.todo {
-    &__insert {
-        @include list-element {
-            color: $clr-gray-blue-verydark-darktheme-1;
-        }
-    }
-
-    &__list {
-        
-    }
-
-    &__clear {
-        
-    }
-
-    &__overview {
-    
-        &--list {
-            list-style: none;
-            padding-left: 0em;
-        }
-    }
-
-    &__dragdrop {
-        
-    }
-}
-
-.cyrcle {
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    background-color: inherit;
-    border: 1px solid grey; /* change to specified color */
-    margin-left: 1em;
-    margin-right: 0.5em;
-}
-
-input[type="text"] {
-    border: none;
-    background: transparent;
-    outline: none;
-    color: grey; /* change to specified color */
-    font-family: inherit;
- }
-
-ul li {
-    display: inline;
-}
-
 
 // Code from frontendmentor.io
 
