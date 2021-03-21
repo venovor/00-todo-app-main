@@ -1,0 +1,44 @@
+.todo {
+    &__insert {
+        @include list-element-style;
+        color: $clr-gray-blue-verydark-darktheme-1;
+    
+        &-cyrcle {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: inherit;
+            border: 1px solid grey; /* change to specified color */
+            margin-left: 1em;
+            margin-right: 0.5em;
+        }
+
+        &-inputstyle {
+            border: none;
+            background: transparent;
+            outline: none;
+            color: grey; /* change to specified color */
+            font-family: inherit;
+        }
+    
+    }
+
+    &__list {
+
+        &-list {
+            @include list-element-bullet; 
+        }
+        
+    }
+
+    &__filter {
+    
+        &-list {
+            @include list-element-bullet;
+        }
+
+        &-button {
+            display: inline;
+        }
+    }
+}
