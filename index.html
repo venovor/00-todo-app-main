@@ -12,8 +12,11 @@
 <body>
   <header class="header-image">
   </header>
-  <main>
-    <h1 class="title"><strong>Todo</strong></h1>
+  <main class="container-todo">
+    <div class="container-title">
+      <h1 class="title"><strong>Todoy</strong></h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
+    </div>
     <div class="todo">
       <div class="todo__insert">
         <span class="todo__insert-cyrcle"></span><input class="todo__insert-inputstyle" type="text" placeholder="Create a new todo...">
@@ -22,8 +25,10 @@
         <ul class="todo__list-list">
           <!-- Instead of div-Elements "li" has been chosen for accesibiltiy reason. -->
           <li class="todo__list-item">
-            <input type="checkbox" id="item-1" name="listitem-1" value="Complete online JavaScript course">
-            <label for="item-1">Create / Complete online JavaScript course</label>
+            <label for="item-1" class="todo__list-container">Complete online JavaScript 1 course
+              <input type="checkbox" id="item-1" name="listitem-1" value="Complete online JavaScript course" class="todo__list-input">
+              <span class="todo__list-checkbox" role="checkbox" tabindex="0"></span>
+            </label>
           </li>
           <li class="todo__list-item">
             <input type="checkbox" id="item-2" name="listitem-2" value="Jog around the park 3x">
