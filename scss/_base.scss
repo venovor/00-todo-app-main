@@ -18,25 +18,22 @@ body {
     color: white; /* to be removed, use for test only */
 }
 
-main {
-    width: 90vw;
-    border: solid black; /* to be removed */
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-todo {
+    width: 80vw;
     position: absolute;
-    margin-top: 3rem;
     font-family: $font-family;
+    border: solid red; /* to be removed */
 
     @include desktop {
         width: 600px;
+        margin-top: 5.5rem;
     }
-}
-
-.title {
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 2rem;
-    letter-spacing: 6px;
-    color: white;
-    font-weight: $font-weight-regular;
 }
 
 // Code from frontendmentor.io
