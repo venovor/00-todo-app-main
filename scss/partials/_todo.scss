@@ -2,6 +2,7 @@
 
     &__insert {
         @include list-element-style;
+        display: flex;
         color: $clr-gray-blue-verydark-darktheme-1;
     
         &-cyrcle {
@@ -32,13 +33,17 @@
 
         &-item {
             @include list-element-style;
+            display: grid;
+            grid-template-columns: 80px auto 80px;
+            grid-template-rows: auto;
+            grid-template-areas: "checkbox text remove";
             border: 1px solid hotpink;
         }
         
-        &-container {  
+        &-container {  //funktioniert, 22.04.2021
             display: block;
             position: relative;
-            padding-left: 40px; //schiebt den text-block nach rechts, mit inline flex versuchen, dass zu bereinigen
+            grid-area: text;
         }
 
         &-checkbox {   //Variante A
@@ -51,7 +56,16 @@
             border-color: grey;
             border-radius: 50%;
             margin-left: 0.5rem;
-            //background: url('images/icon-check.svg') no-repeat;
+            grid-area: checkbox;
+        }
+
+        &-wrapper {
+            @include list-element-style;
+            display: grid;
+            grid-template-columns: 80px auto 80px;
+            grid-template-rows: auto;
+            grid-template-areas: "checkbox text remove";
+            border: 3px solid yellow;
         }
 
         // &-checkbox {   //Variante B
@@ -94,7 +108,7 @@
     }
 }
 
-.todo__list-container input {
+.todo__list-item input {
     appearance: none;
     display: none;
     // position: absolute;
@@ -116,6 +130,15 @@
     content: url('images/icon-check.svg');
     display: block; //wird benötigt für die Zentrierung mit text-align. svg ist bei defaul inline und kann so nicht zentriert werden. 
     text-align: center; //zentriert das svg element in der mitte.
+}
+
+.todo__list-remove {
+    content: url('images/icon-cross.svg');
+    display: block; //warum wird es erst angezeigt wenn ich inline-block verwende?
+    float: right;
+    margin-right: 0.5rem;
+    grid-area: remove;
+    justify-self: end;
 }
 
 // input:focus-visible ~ span {

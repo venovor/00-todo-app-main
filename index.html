@@ -25,10 +25,20 @@
         <ul class="todo__list-list">
           <!-- Instead of div-Elements "li" has been chosen for accesibiltiy reason. -->
           <li class="todo__list-item">
-            <label for="item-1" class="todo__list-container">Complete online JavaScript 1 course
+            <label for="item-1" class="todo__list-container">Complete online JavaScript 1 course</label>
+            <input type="checkbox" id="item-1" name="listitem-1" value="Complete online JavaScript course" class="todo__list-input">
+            <span class="todo__list-checkbox" role="checkbox" tabindex="0"></span><span class="todo__list-remove"></span>
+          </li>
+          <li class="todo__list-item">
+            <div class="todo__list-container">
               <input type="checkbox" id="item-1" name="listitem-1" value="Complete online JavaScript course" class="todo__list-input">
-              <span class="todo__list-checkbox" role="checkbox" tabindex="0"></span>
-            </label>
+              <label for="item-1"><span class="todo__list-checkbox" role="checkbox" tabindex="0"></span>Complete online JavaScript 1 course<span class="todo__list-remove"></span></label>
+            </div>
+          </li>
+          <li class="todo__list-wrapper">
+            <label for="item-1" class="todo__list-container">Complete online JavaScript 1 course</label>
+            <input type="checkbox" id="item-1" name="listitem-1" value="Complete online JavaScript course" class="todo__list-input">
+            <span class="todo__list-checkbox" role="checkbox" tabindex="0"></span><span class="todo__list-remove"></span>
           </li>
           <li class="todo__list-item">
             <input type="checkbox" id="item-2" name="listitem-2" value="Jog around the park 3x">
