@@ -28,7 +28,7 @@ body {
     width: 80vw;
     position: absolute;
     font-family: $font-family;
-    border: solid red; /* to be removed */
+    //border: solid red; /* to be removed */
 
     @include desktop {
         width: 600px;
@@ -36,10 +36,21 @@ body {
     }
 }
 
+footer {
+    //border: 1px solid orange;
+    height: 20px;
+    width: 80vw;
+    margin-top: auto;
+
+    @include desktop {
+        width: 600px;
+    }
+}
+
 // Code from frontendmentor.io
 
 .attribution {
-    font-size: 11px; text-align: center; 
+    font-size: 11px; text-align: center;
 }
 
 .attribution a {
