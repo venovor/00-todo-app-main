@@ -2,17 +2,21 @@
 
     &__insert {
         @include list-element-style;
-        display: flex;
+        display: grid;
+        grid-template-columns: 3rem auto;
+        grid-template-rows: auto;
+        grid-template-areas: "cyrcle input";
         color: $clr-gray-blue-verydark-darktheme-1;
     
         &-cyrcle {
-            height: 18px;
-            width: 18px;
+            height: 20px;
+            width: 20px;
             border-radius: 50%;
             background-color: inherit;
-            border: 1px solid red; /* change to specified color */
-            margin-left: 1em;
+            border: 1px solid grey; /* change to specified color */
+            margin-left: 0.5em;
             margin-right: 0.5em;
+            grid-area: cyrcle;
         }
 
         &-inputstyle {
@@ -21,6 +25,7 @@
             outline: none;
             color: grey; /* change to specified color */
             font-family: inherit;
+            grid-area: input;
         }
     
     }
@@ -34,10 +39,11 @@
         &-item {
             @include list-element-style;
             display: grid;
-            grid-template-columns: 80px auto 80px;
+            grid-template-columns: 3rem auto 3rem;
             grid-template-rows: auto;
             grid-template-areas: "checkbox text remove";
-            border: 1px solid hotpink;
+            //border: 1px solid hotpink;
+            border-bottom: 1px solid grey;
         }
         
         &-container {  //funktioniert, 22.04.2021
@@ -57,15 +63,6 @@
             border-radius: 50%;
             margin-left: 0.5rem;
             grid-area: checkbox;
-        }
-
-        &-wrapper {
-            @include list-element-style;
-            display: grid;
-            grid-template-columns: 80px auto 80px;
-            grid-template-rows: auto;
-            grid-template-areas: "checkbox text remove";
-            border: 3px solid yellow;
         }
 
         // &-checkbox {   //Variante B
